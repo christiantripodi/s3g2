@@ -241,14 +241,56 @@
 
 
 
-      
-      const makeItClickable = function () {}
+
+      const makeItClickable = function () {
+
+        newTitle.addEventListener('click', function(){
+
+          let nuovoT = newTitle.innerText.slice(0, -1)
+          newTitle.innerText = nuovoT
+        })
+
+
+      }
+
+      makeItClickable()
+
+
+
+
+
+
 
       /* ESERCIZIO 10
        Crea una funzione che, al click sul footer, riveli l'URL del link interno come contenuto di un alert()
       */
 
-      const revealFooterLink = function () {}
+
+      let footer = document.querySelector('footer')
+
+      const revealFooterLink = function () {
+
+        footer.addEventListener('click', function(){
+
+          let url = footer.querySelector('a').href
+          alert(url)
+
+
+
+        })
+        
+        
+        
+      }
+      
+      revealFooterLink()
+
+      
+
+
+
+
+
 
       /* ESERCIZIO 11
        Crea una funzione che crei una tabella nell'elemento con id "tableArea". 
