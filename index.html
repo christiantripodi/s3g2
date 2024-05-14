@@ -84,13 +84,28 @@
        Scrivi una funzione per cambiare il titolo della pagina in qualcos'altro
     */
 
-      const changeTitle = function () {}
+      let newTitle = document.querySelector('h1')
+      
+      const changeTitle = function () {
+
+        newTitle.innerText = 'Nuovo Titolo'
+       
+      }
+
+      changeTitle()
 
       /* ESERCIZIO 2
        Scrivi una funzione per aggiungere al titolo della pagina una classe "myHeading"
     */
 
-      const addClassToTitle = function () {}
+
+      
+      const addClassToTitle = function () {
+        newTitle.classList.add('myHeading')
+
+      }
+
+      addClassToTitle()
 
       /* ESERCIZIO 3
        Scrivi una funzione che cambi il testo dei p figli di un div
@@ -98,6 +113,13 @@
 
       const changePcontent = function () {}
 
+
+
+
+
+
+
+      
       /* ESERCIZIO 4
        Scrivi una funzione che cambi la proprietà href di ogni link (tranne quello nel footer) con il valore https://www.google.com
       */
