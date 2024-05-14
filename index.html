@@ -159,32 +159,89 @@
        Scrivi una funzione che aggiunga un nuovo elemento lista alla seconda lista non ordinata
     */
 
+      let listDue = document.querySelector('#secondList')
 
+      const addToTheSecond = function () {
+
+        let li = document.createElement ('li')
+        li.innerText = 'Nuovo li'
+        listDue.append(li)
+
+      }
+
+    addToTheSecond()
     
-      const addToTheSecond = function () {}
-
+    
+    
+    
+    
+    
+    
       /* ESERCIZIO 6
        Scrivi una funzione che aggiunga un paragrafo al primo div
     */
 
-      const addParagraph = function () {}
+
+      let nuovoDiv = document.querySelector('div')
+
+      const addParagraph = function () {
+
+        let p = document.createElement('p')
+        p.innerText = 'nuovo paragrafo nel primo div'
+        nuovoDiv.append(p)
+
+      }
+
+      addParagraph()
+
+
 
       /* ESERCIZIO 7
        Scrivi una funzione che faccia scomparire la prima lista non ordinata
     */
 
-      const hideFirstUl = function () {}
+      let ulHide = document.querySelector('#firstList')
 
+      const hideFirstUl = function () {
+
+        ulHide.remove()
+
+      }
+
+    hideFirstUl()
+    
+    
+    
+    
       /* ESERCIZIO 8 
        Scrivi una funzione che renda verde il background di ogni lista non ordinata
       */
 
-      const paintItGreen = function () {}
+
+      let ulGreen = document.querySelectorAll('ul')
+
+      const paintItGreen = function () {
+
+        ulGreen.forEach(u =>{
+          u.style.backgroundColor ='green'
+          u.style.border = 'solid 1px black'
+        })
+
+      }
+      paintItGreen()
+
+
+
+
+
 
       /* ESERCIZIO 9
        Scrivi una funzione che rimuova l'ultima lettera dall'h1 ogni volta che l'utente lo clicca
       */
 
+
+
+      
       const makeItClickable = function () {}
 
       /* ESERCIZIO 10
