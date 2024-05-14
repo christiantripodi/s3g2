@@ -111,25 +111,56 @@
        Scrivi una funzione che cambi il testo dei p figli di un div
       */
 
-      const changePcontent = function () {}
+
+      let figliP = document.querySelectorAll('div p')
+
+
+      const changePcontent = function () {
+
+        figliP.forEach(f => {
+          
+          f.innerText = 'Testo Modificato Per Figli di P'
+
+
+        })
+
+
+      }
+
+      changePcontent()
 
 
 
 
 
 
-
-      
       /* ESERCIZIO 4
        Scrivi una funzione che cambi la proprietà href di ogni link (tranne quello nel footer) con il valore https://www.google.com
       */
 
-      const changeUrls = function () {}
+
+      let ancor = document.querySelectorAll('a:not(footer a)')
+
+      const changeUrls = function () {
+
+        ancor.forEach(a =>{
+          a.href = 'http://www.fijlkam.it'
+        })
+
+      }
+
+      changeUrls()
+
+
+
+
 
       /* ESERCIZIO 5
        Scrivi una funzione che aggiunga un nuovo elemento lista alla seconda lista non ordinata
     */
 
+
+    
       const addToTheSecond = function () {}
 
       /* ESERCIZIO 6
